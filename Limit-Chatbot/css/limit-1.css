@@ -194,7 +194,7 @@
 	}
 	#btn:hover {
 		transform: translateY(-4px);
-		background: #19b955;
+		background-color: #19b955 !important;
 	}
 	p {
 		transition: all .5s ease;
