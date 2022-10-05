@@ -181,7 +181,7 @@
 		transition: all .5s ease;
 		width: 100px;
 		height: 60px;
-		background-color: #6668e8;
+		background-color: #6668e8 !important;
 		float: right;
 		cursor: pointer;
 		text-align: center;
