@@ -1,0 +1,212 @@
+	a:link {
+		color: #fff;
+		text-decoration: none;
+	}
+	a:visited {
+		text-decoration: none;
+		color: #fff;
+	}
+	a:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+	a:active {
+		text-decoration: none;
+		color: #fff;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		font-size: 12px;
+		background: url(https://cdn.luogu.com.cn/upload/image_hosting/8qufiewy.png) no-repeat;
+		background-size: cover;
+	}
+	#top {
+		width: 100%;
+		height: 60px;
+		background: rgba(15, 25, 50, 0.3);
+		color: #fff;
+		line-height: 60px;
+		text-align: center;
+		font-size: 30px;
+	}
+	#box {
+		transition: all .5s ease;
+		border-radius: 20px;
+		width: 800px;
+		height: 550px;
+		background: rgba(255, 255, 255, .5);
+		margin: 40px auto 0;
+		box-shadow: 0px 0px 8px #000;
+	}
+	#box:hover {
+		transform: translateY(-4px);
+		box-shadow: 0px 2px 15px #000;
+	}
+	.b-head {
+		width: 100%;
+		height: 60px;
+		background-color: #4CAF5098;
+		border-radius: 20px 20px 0px 0px;
+	}
+	.h-img {
+		transition: all 1s ease;
+		margin: 0 20px;
+		float: left;
+		user-select: none;
+	}
+	.h-img:hover {
+		transform: rotate(360deg);
+	}
+	.h_span {
+		color: #fff;
+		font-size: 18px;
+		line-height: 60px;
+		float: left;
+		user-select: none;
+		cursor: default;
+	}
+	.b-body {
+		width: 100%;
+		height: 380px;
+		overflow: auto;
+		margin: 20px 0;
+	}
+	@keyframes show {
+		from {
+			transform: translateX(-400px);
+		}
+		to {
+			transform: translateX(0px);
+		}
+	}
+	@keyframes show2 {
+		from {
+			transform: translateX(-800px);
+		}
+		to {
+			transform: translateX(0px);
+		}
+	}
+	.rotWord {
+		animation: show 1s;
+		width: 100%;
+		margin-top: 10px;
+		overflow: hidden;
+	}
+	.mWord {
+		animation: show2 1s;
+		width: 100%;
+		margin-top: 10px;
+		overflow: hidden;
+	}
+	.rotWord span {
+		background: url(https://cdn.luogu.com.cn/upload/image_hosting/dn3g6va0.png);
+		height: 40px;
+		width: 40px;
+		margin-left: 20px;
+		float: left;
+		border-radius:60px;
+		background-size: cover;
+	}
+	.rotWord span:hover {
+		transition: all 1s ease;
+		transform: rotate(360deg);
+	}
+	.rotWord p {
+		word-break: break-all;
+		top: 4px;
+		float: left;
+		color: #fff;
+		font-size: 14px;
+		margin-left: 10px;
+		padding: 10px;
+		line-height: 24px;
+		background: rgba(32, 32, 211, 0.5);
+		border-radius: 6px;
+		max-width: 220px;
+	}
+	.mWord span {
+		background: url(https://cdn.luogu.com.cn/upload/image_hosting/y7t74c92.png);
+		height: 40px;
+		width: 40px;
+		float: right;
+		margin-right: 20px;
+        border-radius: 60px;
+		background-size: cover;
+	}
+	.mWord span:hover {
+		transition: all 1s ease;
+		transform: rotate(360deg);
+	}
+	.mWord p {
+		word-break: break-all;
+		top: 2px;
+		float: right;
+		color: #fff;
+		font-size: 14px;
+		margin-right: 10px;
+		padding: 10px;
+		line-height: 24px;
+		background: #19b955;
+		border-radius: 6px;
+		max-width: 220px;
+	}
+	.b-footer {
+		width: 760px;
+		height: 60px;
+		margin: 0 20px;
+		font-size: 16px;
+		color: #666;
+	}
+	#f-left {
+		transition: all .5s ease;
+		padding-left: 20px;
+		outline: none;
+		overflow: hidden;
+		width: 620px;
+		height: 60px;
+		float: left;
+		background: rgba(0, 0, 0, .2);
+		font-size: 18px;
+		border: none;
+		border-radius: 5px;
+	}
+	#f-left:hover {
+		background-color:rgba(0, 0, 0, .4);
+	}
+	#btn {
+		transition: all .5s ease;
+		width: 100px;
+		height: 60px;
+		background-color: #6668e8 !important;
+		float: right;
+		cursor: pointer;
+		text-align: center;
+		line-height: 60px;
+		font-size: 18px;
+		color: #fff;
+		user-select: none;
+		border-radius: 10px;
+		box-shadow: 0px 0px 20px #fff;
+	}
+	#btn:hover {
+		transform: translateY(-4px);
+		background-color: #19b955 !important;
+	}
+	p {
+		transition: all .5s ease;
+		opacity: 0.8;
+	}
+	.rotWord p:hover {
+		font-size: 140%;
+		background-color: rgba(149, 0, 255, 0.5);
+		opacity: 0.9;
+	} 
+	.mWord p:hover {
+		font-size: 140%;
+		background-color: #48bbac;
+		opacity: 0.9;
+	} 
