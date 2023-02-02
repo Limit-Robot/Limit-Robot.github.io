@@ -1,198 +1,186 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Limit-Robot</title>
-        <link rel="shortcut icon" href="https://cdn.luogu.com.cn/upload/usericon/532992.png">
-        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0">
-        <link rel="stylesheet" type="text/css" href="usually.css">
-        <meta name="keywords" content="Limit-Robot">
-        <script>
-            function print1() {
-                document.getElementById("font1").innerHTML="Limit - Robot";
-                var box = document.getElementById("font1");
-                box.style.animationName = "font1";
-                box.style.animationDuration = "1s";
-            }
-            setTimeout(print1, 400);
-        </script>
-        <style>
-            .fot {
-                position: fixed;
-                transform: translateY(-14px);
-                transition: all .5s ease;
-                text-align: center;
-                background: rgba(14, 14, 14, 0.88);
-                -webkit-backdrop-filter: blur(8px);
-                backdrop-filter: blur(8px);
-                border-radius: 18px;
-                box-shadow: 0px 0px 10px rgb(54, 53, 53);
-                bottom: 0;
-                width: 140px;
-                height: 10px;
-                z-index: 999;
-                margin-left: 40%;
-            }
-            .fot:hover{
-                transform: translateY(-16px); 
-                box-shadow: 0px 0px 10px #000;
-                background: rgba(14, 14, 14, 0.92);
-                border-radius: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="header">
-            <a href = "https://robot.scorpio532992.ltd"><img src="https://pic.imgdb.cn/item/632a9d2c16f2c2beb1ba1e3e.png" alt="Limit-Danger" style="margin-left: -6%;height: 9vh;vertical-align: middle;"></a>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Limit-Robot</title>
+    <link rel="shortcut icon" href="https://cdn.luogu.com.cn/upload/usericon/532992.png">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0">
+    <link rel="stylesheet" type="text/css" href="usually.css">
+    <meta name="keywords" content="Limit-Robot">
+    <script>
+        function print1() {
+            document.getElementById("font1").innerHTML = "Limit - Robot";
+            var box = document.getElementById("font1");
+            box.style.animationName = "font1";
+            box.style.animationDuration = "1s";
+        }
+        setTimeout(print1, 400);
+    </script>
+    <style>
+        .fot {
+            position: fixed;
+            transform: translateY(-14px);
+            transition: all .5s ease;
+            text-align: center;
+            background: rgba(14, 14, 14, 0.88);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 18px;
+            box-shadow: 0px 0px 10px rgb(54, 53, 53);
+            bottom: 0;
+            width: 140px;
+            height: 10px;
+            z-index: 999;
+            margin-left: 40%;
+        }
+        
+        .fot:hover {
+            transform: translateY(-16px);
+            box-shadow: 0px 0px 10px #000;
+            background: rgba(14, 14, 14, 0.92);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="https://robot.scorpio532992.ltd"><img src="https://pic.imgdb.cn/item/632a9d2c16f2c2beb1ba1e3e.png" alt="Limit-Danger" style="margin-left: -6%;height: 9vh;vertical-align: middle;"></a>
+    </div>
+    <div class="bigfont" id="font1">　</div>
+    <div class="bigimg"><img src="https://pic.imgdb.cn/item/632a9e5b16f2c2beb1bb2feb.png" alt="Limit-Robot"></div>
+    <div class="anniu">
+        <a href="#download">
+            <button class="download" style="cursor: pointer;">立即使用</button>
+        </a>
+    </div>
+    <h1 style="color: rgb(43, 70, 226);text-align: center;margin-top: 10%;;">关于 Limit-Robot</h1>
+    <br><br>
+    <div class="about">
+        <div style="font-size: 1.3vw;color:rgb(43, 70, 226);font-weight: 700;">
+            <i class="	fa fa-caret-right"></i> 关于 Limit-Robot
         </div>
-        <div class="bigfont" id="font1">　</div>
-        <div class="bigimg"><img src="https://pic.imgdb.cn/item/632a9e5b16f2c2beb1bb2feb.png" alt="Limit-Robot"></div>
-        <div class="anniu">
-            <a href="#download">
-                <button class="download" style="cursor: pointer;">立即使用</button>
+        <div style="padding-left: 1%;">
+            &nbsp; &nbsp; &nbsp; &nbsp; Limit - Robot 是各种 AI 程序软件、机器人和游戏，目的是为了让用户更好的与 AI 进行交流， 同时让用户体会到与 AI 互动的趣味性。
+        </div>
+    </div>
+    <div id="download"></div>
+    <h1 style="color: rgb(43, 70, 226);text-align: center;margin-top: 10%;">Limit - Robot</h1>
+    <br><br>
+    <div class="down">
+        <div class="smartbox">
+            <div class="smartboxtop">
+                <a href="Limit-Chatbot/index.html">Limit - Chatbot</a>
+            </div>
+            <div class="smartboxdown">这是一个 AI 聊天机器人</div>
+        </div>
+
+        <div class="smartbox">
+            <div class="smartboxtop">
+                <a href="Limit-TicTacToe/index.html">Limit - TicTacToe</a>
+            </div>
+            <div class="smartboxdown">这是一个井字棋程序</div>
+        </div>
+
+        <div class="smartbox">
+            <div class="smartboxtop">
+                <a href="Limit-2048/index.html">Limit - 2048</a>
+            </div>
+            <div class="smartboxdown">这是一个 2048 小游戏</div>
+        </div>
+
+        <div class="smartbox">
+            <div class="smartboxtop">
+                <a href="Limit-Gobang/index.html">Limit - Gobang</a>
+            </div>
+            <div class="smartboxdown">这是一个五子棋小游戏</div>
+        </div>
+
+        <div class="smartbox">
+            <div class="smartboxtop">
+                <a href="Limit-Danger/index.html">逃离 CX</a>
+            </div>
+            <div class="smartboxdown">这是一个休闲竞技小游戏</div>
+        </div>
+
+        <div class="smartbox">
+            <div class="smartboxtop">
+                <a href="Limit-Danger/index.html">逃离 CX</a>
+            </div>
+            <div class="smartboxdown">这是一个休闲竞技小游戏</div>
+        </div>
+
+        <div class="smartbox">
+            <div class="smartboxtop">
+                <a href="Limit-Windows30/index.html">Windows 30</a>
+            </div>
+            <div class="smartboxdown">这是一个网页版的 Windows 30 系统</div>
+        </div>
+
+        <div class="smartbox">
+            <div class="smartboxtop">
+                <a href="Limit-Mouse/index.html">Limit - Mouse</a>
+            </div>
+            <div class="smartboxdown">这是一个鼠标连点器</div>
+        </div>
+
+        <h1 style="color: rgb(43, 70, 226);text-align: center;margin-top: 10%;;">目前开发组</h1>
+        <br><br>
+        <div class="Develop">
+            <a href="https://www.luogu.com.cn/user/532992" class="Developer" target="_blank">
+                <img src="https://cdn.luogu.com.cn/upload/usericon/532992.png" alt="Scorpio_Limit"> &nbsp; Scorpio_Limit
+            </a>
+            <a href="https://www.luogu.com.cn/user/514850" class="Developer" target="_blank">
+                <img src="https://cdn.luogu.com.cn/upload/usericon/514850.png" alt="Acerkaio"> &nbsp; Acerkaio
+            </a>
+            <a href="" class="Developer" target="_blank">
+                <img src="https://pic.imgdb.cn/item/632aaba816f2c2beb1c871ec.jpg" alt="HanXinyu"> &nbsp; HanXinyu
             </a>
         </div>
-        <h1 style="color: rgb(43, 70, 226);text-align: center;margin-top: 10%;;">关于 Limit-Robot</h1>
-        <br><br>
-        <div class="about">
-            <div style="font-size: 1.3vw;color:rgb(43, 70, 226);font-weight: 700;">
-                <i class="	fa fa-caret-right"></i>
-                关于 Limit-Robot
-            </div>
-            <div style="padding-left: 1%;">
-                &nbsp; &nbsp; &nbsp; &nbsp; Limit - Robot 是各种 AI 程序软件、机器人和游戏，目的是为了让用户更好的与 AI 进行交流， 同时让用户体会到与 AI 互动的趣味性。  
-            </div>
-        </div>
-        <div id="download"></div>
-        <h1 style="color: rgb(43, 70, 226);text-align: center;margin-top: 10%;" >Limit - Robot</h1>
-        <br><br>
-        <div class="down">
-            <div class="smartbox">
-                <div class="smartboxtop">
-                    <a href="Limit-Chatbot/index.html">Limit - Chatbot</a>  
-                </div>
-                <div class="smartboxdown">这是一个 AI 聊天机器人</div>
-            </div>
-
-            <div class="smartbox">
-                <div class="smartboxtop">
-                    <a href="Limit-TicTacToe/index.html">Limit - TicTacToe</a>  
-                </div>
-                <div class="smartboxdown">这是一个井字棋程序</div>
-            </div>
-			
-			<div class="smartbox">
-                <div class="smartboxtop">
-                    <a href="Limit-2048/index.html">Limit - 2048</a>  
-                </div>
-                <div class="smartboxdown">这是一个 2048 小游戏</div>
-            </div>
-			
-			<div class="smartbox">
-                <div class="smartboxtop">
-                    <a href="Limit-Gobang/index.html">Limit - Gobang</a>  
-                </div>
-                <div class="smartboxdown">这是一个五子棋小游戏</div>
-            </div>
-
-            <div class="smartbox">
-                <div class="smartboxtop">
-                    <a href="Limit-Danger/index.html">逃离 CX</a>  
-                </div>
-                <div class="smartboxdown">这是一个休闲竞技小游戏</div>
-            </div>
-		
-	    <div class="smartbox">
-                <div class="smartboxtop">
-                    <a href="Limit-Windows30/index.html">Windows 30</a>  
-                </div>
-                <div class="smartboxdown">这是一个网页版的 Windows 30 系统</div>
-            </div>
-			
-            <h1 style="color: rgb(43, 70, 226);text-align: center;margin-top: 10%;;">目前开发组</h1>
-            <br><br>
-            <div class="Develop">
-                <a href="https://www.luogu.com.cn/user/532992" class="Developer" target="_blank">
-                   <img src="https://cdn.luogu.com.cn/upload/usericon/532992.png" alt="Scorpio_Limit">
-                    &nbsp; 
-                    Scorpio_Limit
-               </a>
-               <a href="https://www.luogu.com.cn/user/514850" class="Developer" target="_blank">
-                   <img src="https://cdn.luogu.com.cn/upload/usericon/514850.png" alt="Acerkaio">
-                    &nbsp; 
-                    Acerkaio
-               </a>
-                <a href="" class="Developer" target="_blank">
-                   <img src="https://pic.imgdb.cn/item/632aaba816f2c2beb1c871ec.jpg" alt="HanXinyu">
-                    &nbsp; 
-                    HanXinyu
-               </a>
-            </div>
-            <br>
-            <br>
-            <script>
-                function backTop() {
-                    window.scrollBy(0, -100000);
-                    scrolldelay = setTimeout('backTop()', 30);
-                    if(document.documentElement.scrollTop == 0) clearTimeout(scrolldelay);
-                }  
-                setInterval(datatime, 1000);
-            </script>
-            <div class = "fot" onclick = "backTop()"></div>
-        </div>
         <br>
-    </body>
-    <script>
-        function Time() {
-            var today = new Date();
-            var yyyy = today.getFullYear();
-            var MM = today.getMonth() + 1;
-            var dd = today.getDate();
-            var hh = today.getHours();
-            var mm = today.getMinutes();
-            var ss = today.getSeconds();
-            MM = checkTime(MM);
-            dd = checkTime(dd);
-            mm = checkTime(mm);
-            ss = checkTime(ss);
-            var day;
-            if (today.getDay() == 0) day = " Sunday"
-            if (today.getDay() == 1) day = " Monday"
-            if (today.getDay() == 2) day = " Tuesday"
-            if (today.getDay() == 3) day = " Wednesday"
-            if (today.getDay() == 4) day = " Thursday"
-            if (today.getDay() == 5) day = " Friday"
-            if (today.getDay() == 6) day = " Saturday"
-            document.getElementById('nowDateTimeSpan').innerHTML = yyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" + ss + "  "+ day;
-            setTimeout('Time()', 1000);
-        }
-        function checkTime(x) {
-            if (x < 10) x = "0" + x;
-            return x;
-        }
-    </script>
-	<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
-	<script>
-		L2Dwidget.init({
-			"model": {
-				jsonPath: "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
-				"scale": 1
-			},
-			"display": {
-			"position": "left",
-			"width": 80,
-			"height": 180,
-			"hOffset": 0,
-			"vOffset": -20
-		},
-		"mobile": {
-			"show": true,
-			"scale": 0.5
-		},
-		"react": {
-			"opacityDefault": 0.7,
-			"opacityOnHover": 0.2
-		}
-	});
-	</script>
+        <br>
+        <script>
+            function backTop() {
+                window.scrollBy(0, -100000);
+                scrolldelay = setTimeout('backTop()', 30);
+                if (document.documentElement.scrollTop == 0) clearTimeout(scrolldelay);
+            }
+            setInterval(datatime, 1000);
+        </script>
+        <div class="fot" onclick="backTop()"></div>
+    </div>
+    <br>
+</body>
+<script>
+    function Time() {
+        var today = new Date();
+        var yyyy = today.getFullYear();
+        var MM = today.getMonth() + 1;
+        var dd = today.getDate();
+        var hh = today.getHours();
+        var mm = today.getMinutes();
+        var ss = today.getSeconds();
+        MM = checkTime(MM);
+        dd = checkTime(dd);
+        mm = checkTime(mm);
+        ss = checkTime(ss);
+        var day;
+        if (today.getDay() == 0) day = " Sunday"
+        if (today.getDay() == 1) day = " Monday"
+        if (today.getDay() == 2) day = " Tuesday"
+        if (today.getDay() == 3) day = " Wednesday"
+        if (today.getDay() == 4) day = " Thursday"
+        if (today.getDay() == 5) day = " Friday"
+        if (today.getDay() == 6) day = " Saturday"
+        document.getElementById('nowDateTimeSpan').innerHTML = yyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" + ss + "  " + day;
+        setTimeout('Time()', 1000);
+    }
+
+    function checkTime(x) {
+        if (x < 10) x = "0" + x;
+        return x;
+    }
+</script>
+
 </html>
