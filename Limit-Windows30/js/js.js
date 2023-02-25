@@ -9,7 +9,7 @@ function print1() {
     box.style.animationName = "font1";
     box.style.animationDuration = "1.2s";
 }
-setTimeout(print1, 1400);
+
 // setTimeout(print1, 10);
 
 function print2() {
@@ -17,21 +17,21 @@ function print2() {
     boxb.style.animationName = "font2";
     boxb.style.animationDuration = "1.2s";
 }
-setTimeout(print2, 3600);
+
 // setTimeout(print2, 10);
 
 function zzh1() {
     var span = document.getElementsByTagName("span")[0];
     span.className = "zzb2";
 }
-setTimeout(zzh1, 4400);
+
 // setTimeout(zzh1, 10);
 
 function zzh2() {
     var a = document.getElementsByTagName("div")[1];
     a.style = "display: block;";
 }
-setTimeout(zzh2, 4800);
+
 // setTimeout(zzh2, 10);
 
 function zzh3() {
@@ -44,8 +44,9 @@ function zzh3() {
     var c = document.getElementsByTagName("div")[2];
     c.style = "display: block;";
 }
-setTimeout(zzh3, 10000);
+
 // setTimeout(zzh3, 10);
+
 
 function win_login() {
     if (event.keyCode == '13') {
@@ -80,24 +81,34 @@ function win_login_3() {
     var f = document.getElementById("TaskBack");
     f.style = "display: block;"
 }
+function start() {
+	setTimeout(print1, 1400);
+	setTimeout(print2, 3600);
+	setTimeout(zzh1, 4400);
+	setTimeout(zzh2, 4800);
+	setTimeout(zzh3, 10000)
+}
+function Start() {
+	setTimeout(print1, 10);
+	setTimeout(print2, 10);
+	setTimeout(zzh1, 10);
+	setTimeout(zzh2, 10);
+	setTimeout(zzh3, 10);
+	setTimeout(win_login, 10);
+	setTimeout(win_login_2, 10);
+	setTimeout(win_login_3, 10);
+}
+
+Start();
 
 function icon_blue_1() {
     ++tot1;
-    var a = document.getElementById("icon-blue-1");
     var b = document.getElementById("Icon-1");
-    var c = document.getElementsByTagName("img")[2];
-    var d = document.getElementById("menu-1");
-    c.style.animationName = "Icon2";
-    c.style.animationDuration = ".5s";
     if (tot1 == 1) {
-        a.style = "display: block;";
         b.style = "background-color: #ffffffc2;";
-        d.style = "display: block;";
     }
-    if (tot1 == 2) {
-        a.style = "display: none;";
+    else if (tot1 >= 2) {
         b.style = "background-color: #ffffff00;";
-        d.style = "display: none;";
         tot1 = 0;
     }
 }
