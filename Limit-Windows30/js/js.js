@@ -177,6 +177,6 @@ function Edge() {
 }
 
 // 调试 Start
-Start(); // 测试
-// start(); // 正式
+//Start(); // 测试
+start(); // 正式
 // 调试 End
