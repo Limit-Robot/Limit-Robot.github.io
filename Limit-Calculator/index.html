@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>计算器</title>
+    <style type="text/css">
+        #calculator {
+            width: 300px;
+            height: 480px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #000000;
+        }
+        #result {
+            width: 100%;
+            height: 80px;
+            font-size: 40px;
+            text-align: right;
+            box-sizing: border-box;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .row {
+            width: 100%;
+            height: 80px;
+        }
+        .row div {
+            width: 25%;
+            height: 100%;
+            float: left;
+            box-sizing: border-box;
+        }
+        .number {
+            background-color: #fff;
+            color: #000;
+        }
+        .operator {
+            background-color: #f5f5f5;
+        }
+        .clear {
+            background-color: #ff6666;
+        }
+        .number, .operator, .clear, #result {
+            border: 1px solid #000000;
+            text-align: center;
+            line-height: 80px;
+            font-size: 30px;
+        }
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <div id="result"></div>
+        <div class="row">
+            <div class="clear" onclick="clearResult()">C</div>
+            <!-- <div class="operator" onclick="backspace()">←</div> -->
+            <div class="operator" onclick="backspace()">Back</div>
+            <div class="operator" onclick="input('/')">÷</div>
+            <div class="operator" onclick="input('*')">x</div>
+        </div>
+        <div class="row">
+            <div class="number" onclick="input('7')">7</div>
+            <div class="number" onclick="input('8')">8</div>
+            <div class="number" onclick="input('9')">9</div>
+            <div class="operator" onclick="input('-')">-</div>
+        </div>
+        <div class="row">
+            <div class="number" onclick="input('4')">4</div>
+            <div class="number" onclick="input('5')">5</div>
+            <div class="number" onclick="input('6')">6</div>
+            <div class="operator" onclick="input('+')">+</div>
+        </div>
+        <div class="row">
+            <div class="number" onclick="input('1')">1</div>
+            <div class="number" onclick="input('2')">2</div>
+            <div class="number" onclick="input('3')">3</div>
+            <div class="operator" onclick="input('.')">.</div>
+        </div>
+        <div class="row">
+            <div class="number" onclick="input('0')" style="border-radius: 0px 0px 0px 10px;">0</div>
+            <div class="operator" onclick="input('%')">%</div>
+            <div class="operator" onclick="input('&')">+/-</div>
+            <div class="operator" onclick="calculate()" style="border-radius: 0px 0px 10px 0px;">=</div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var result = document.getElementById("result");
+        function input(value) {
+            if (result.length > 16) return;
+            if (value == "*") value = "x";
+            else if (value == "/") value = "÷";
+            else if (value == "%") value = "%";
+            else if (value == "&") {
+                var str = result.innerHTML;
+                if (str.charAt(0) == "-") {
+                    str = str.substring(1, str.length);
+                }
+                else str = "-" + str;
+                result.innerHTML = str;
+                value = "";
+            }
+            result.innerHTML += value;
+            var st = result.innerHTML;
+            var le = st.length;
+            if (le > 16) st = st.substring(0, 16);
+            result.innerHTML = st;
+        }
+        function clearResult() {
+            result.innerHTML = "";
+        }
+        function backspace() {
+            var current = result.innerHTML;
+            result.innerHTML = current.substring(0, current.length - 1);
+        }
+        function calculate() {
+            var ex = result.innerHTML.replace(/x/g, "*").replace(/÷/g, "/").replace(/%/g, "*0.01").replace(/π/g, "3.141592653589793238462643383279");
+            result.innerHTML = eval(ex);
+            var str = result.innerHTML;
+            var len = str.length;
+            if (len > 16) str = str.substring(0, 16);
+            result.innerHTML = str;
+        }
+    </script>
+
+</body>
+</html>
