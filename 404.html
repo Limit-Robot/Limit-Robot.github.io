@@ -2,85 +2,121 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Limit-Robot(404)</title>
+        <title>Limit-Robot[404]</title>
         <link rel="shortcut icon" href="https://cdn.luogu.com.cn/upload/usericon/532992.png">
         <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0">
-        <link rel="stylesheet" type="text/css" href="https://robot.scorpio532992.ltd/usually.css">
         <meta name="keywords" content="Limit-Robot">
-        <script>
-            function print1() {
-                document.getElementById("font1").innerHTML="Limit - Robot";
-                var box = document.getElementById("font1");
-                box.style.animationName = "font1";
-                box.style.animationDuration = "1s";
-            }
-            setTimeout(print1, 400);
-        </script>
         <style>
-            .fot {
-                position: fixed;
-                transform: translateY(-14px);
-                transition: all .5s ease;
-                text-align: center;
-                background: rgba(14, 14, 14, 0.88);
-                -webkit-backdrop-filter: blur(8px);
-                backdrop-filter: blur(8px);
-                border-radius: 18px;
-                box-shadow: 0px 0px 10px rgb(54, 53, 53);
-                bottom: 0;
-                width: 140px;
-                height: 10px;
-                z-index: 999;
-                margin-left: 40%;
+            ::-webkit-scrollbar-thumb {
+                background-color: rgba(137, 81, 234, .99);
             }
-            .fot:hover{
-                transform: translateY(-16px); 
-                box-shadow: 0px 0px 10px #000;
-                background: rgba(14, 14, 14, 0.92);
-                border-radius: 20px;
+            ::-webkit-scrollbar-thumb:hover {
+                background-color: #5e72e4;
+            }
+            ::-webkit-scrollbar {
+            width: 5px;
+            height: 10px;
+            background-color: rgba(0, 0, 0, .12);
+            }
+            html {
+                scroll-behavior: smooth;
+                /* background-color: #000000; */
+                background-image: url(https://pic2.imgdb.cn/item/645cd6cf0d2dde57771c8c4b.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                font-family: Arial, Helvetica, sans-serif;;
+                user-select: none;
+                margin-top: 380px;
+                overflow-x: hidden;
+            }
+            a{
+                text-decoration: none;
+            }
+            .header {
+                background-color: #333333;
+                width: 105%;
+                margin-left: -20px;
+                padding-left: 30px; 
+                height: 30px;
+                font-size: 13.5px;
+                padding-top: 8px;
+                display: flex;
+                top: 0px;
+                left:0;
+                position: fixed;
+                z-index: 999;
+            }
+            .header > a {
+                color: #ffffff;
+            }
+            .app {
+                margin-left: 40px;
+                margin-top: 4px;
+            }
+            .windows-1 {
+                background-color: #ffffff;
+                width: 8px;
+                height: 8px;
+                border-radius: 2px;
+                transform: translate(0px, 2.5px);
+            }
+            .windows-2 {
+                background-color: #ffffff;
+                width: 8px;
+                height: 8px;
+                border-radius: 2px;
+                transform: translate(9px, -5.5px);
+            }
+            .windows-3 {
+                background-color: #ffffff;
+                width: 8px;
+                height: 8px;
+                border-radius: 2px;
+                transform: translate(0px, -4.5px);
+            }
+            .windows-4 {
+                background-color: #ffffff;
+                width: 8px;
+                height: 8px;
+                border-radius: 2px;
+                transform: translate(9px, -12.5px);
+            }
+            #search {
+                transform: translate(-151px, 3px);
+                width: 18px;
+                height: 18px;
+            }
+            #divsearch {
+                width: 150px;
+                height: 22px;
+                border-radius: 8px;
+                transform: translate(20px, 0px);
+                padding-left: 22px;
+                background-color: #252525;
+                border: 0;
+                color: #ffffff;
+                outline: none;
+                font-size: 15px;
+            }
+            #notfind {
+                transform: translate(0px, 40px);
+            }
+            #notfind > h1 {
+                font-size: 100px;
+                color: #ffffff;
             }
         </style>
     </head>
     <body>
-        <div class="header">
-            <a href = "https://robot.scorpio532992.ltd"><img src="https://pic.imgdb.cn/item/632a9d2c16f2c2beb1ba1e3e.png" alt="Limit-Danger" style="margin-left: -6%;height: 9vh;vertical-align: middle;"></a>
+        <div id = "notfind" align="center">
+            
         </div>
-        <div class="bigfont" id="font1">　</div>
-        <div class="bigimg"><img src="https://pic.imgdb.cn/item/63b565cebe43e0d30e3acd57.png" alt="Limit-Robot"></div>
-        <div class="anniu">
-            <a href="https://robot.scorpio532992.ltd">
-                <button class="download" style="cursor: pointer;">返回主页</button>
-            </a>
-        </div>
-        <br>
     </body>
     <script>
-        function Time() {
-            var today = new Date();
-            var yyyy = today.getFullYear();
-            var MM = today.getMonth() + 1;
-            var dd = today.getDate();
-            var hh = today.getHours();
-            var mm = today.getMinutes();
-            var ss = today.getSeconds();
-            MM = checkTime(MM);
-            dd = checkTime(dd);
-            mm = checkTime(mm);
-            ss = checkTime(ss);
-            var day;
-            if (today.getDay() == 0) day = " Sunday"
-            if (today.getDay() == 1) day = " Monday"
-            if (today.getDay() == 2) day = " Tuesday"
-            if (today.getDay() == 3) day = " Wednesday"
-            if (today.getDay() == 4) day = " Thursday"
-            if (today.getDay() == 5) day = " Friday"
-            if (today.getDay() == 6) day = " Saturday"
-            document.getElementById('nowDateTimeSpan').innerHTML = yyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" + ss + "  "+ day;
-            setTimeout('Time()', 1000);
+        function back() {
+            window.location.replace("https://robot.scorpiolimit.top/index.html");
         }
-        function checkTime(x) {
-            if (x < 10) x = "0" + x;
-            return x;
-        }
+        setTimeout(back, 2000);
     </script>
 </html>
